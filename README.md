@@ -48,12 +48,16 @@ flask-cicd/
 
 3. Build Docker Image
    docker build -t your-dockerhub-username/flask-cicd .
+   The Docker image for this project is publicly available at:
+    https://hub.docker.com/r/madiwroose/flask-cicd
+    Or pull it directly using:
+    docker pull madiwroose/flask-cicd
 
-4. Push to DockerHub
+5. Push to DockerHub
    docker login -u your-dockerhub-username
    docker push your-dockerhub-username/flask-cicd
 
-5. Deploy to Kubernetes
+6. Deploy to Kubernetes
    kubectl apply -f deployment.yaml
 
 🔁 GitHub Actions Automation
